@@ -6,7 +6,7 @@
 }
 
 .contact-form {
-  background: lightblue;
+  background: #ebb3f0;
   padding: 20px;
   max-width: 500px;
   border-radius: 4px;
@@ -16,22 +16,40 @@
   text-align: left;
 }
 
+header {
+  text-align: center;
+  background: #69366e;
+  padding: 20px 0;
+}
+
+
+nav ul li  {
+  display: inline;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  padding: 5px;
+
+}
+
 .label_input_wrap {
   display: block;
 }
 
 .reset input,
 .submit input {
-  background: orange;
+  background: #69366e;
   color: white;
   padding: 5px 20px;
   border-radius: 4px;
 }
 
-.reset,
-.submit {
-  display: inline;
+submit:hover {
+background: orange;
 }
+
 
 .input-section {
   margin-bottom: 10px;
@@ -60,10 +78,36 @@ label {
 
 .container {
   max-width: 900px;
-  margin: 0 auto;
+  margin: 50px auto 180px;
   text-align: center;
 }
 
 body {
-  background: aliceblue;
+  background: #f3e7f3;
+}
+
+footer{
+  background: #69366e;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.checks {
+  display: inline;
+  margin: 0 auto;
+  text-align: center;
+}
+
+img {
+  max-width: 200px;
+  justify-content: center;
+  text-align: center;
+}
+
+.logo {
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }

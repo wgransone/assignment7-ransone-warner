@@ -10,125 +10,101 @@
     <header>
       <nav>
         <ul>
-          <li><a href="index.html">Home</li>
-          <li><a href="about.html">About Us</li>
-          <li><a href="contact.html">Contact Us</li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
         </ul>
       </nav>
     </header>
-    
-    <div class="container">
 
-
-        <h1>Submit an Order</h1>
-            <form class="contact-form" id="test_form" name="test_form" method="" action="form.php" onsubmit="return validateForm(this)">
-              <div class="firstname input-section">
-                <label for="firstname" class="label_input_wrap"> First Name:
-                </label>
-                <input type="text" name="firstname" id="firstname" placeholder="ex. John">
-              </div>
-
-              <div class="lastname input-section">
-                <label for="lastname" class="label_input_wrap"> Last Name:
-                </label>
-                <input type="text" name="lastname" id="lastname" placeholder="ex. Smith">
-              </div>
-
-              <div class="email input-section">
-                <label for="email" class="label_input_wrap"> Email:
-                </label>
-                <input type="email" name="email" id="email" placeholder="jsmith@example.com">
-              </div>
-
-              <div class="telephone input-section">
-                <label for="telephone" class="label_input_wrap"> Telephone:
-                </label>
-                <input type="tel" name="telephone" id="telephone" placeholder="(000) 000-0000">
-              </div>
-
-              <div class="comments input-section">
-                <label for="comments" class="label_input_wrap"> Comments:
-                </label>
-                <textarea name="comments" id="comments" cols="55" rows="15"
-                placeholder="Your Comment Goes Here"></textarea>
-              </div>
-
-              <!--<div class="checkbox">
-                <h3>Favorite Sport</h3>
-
-                  <input type="checkbox" name="sports" value="baseball" id="baseball" />
-                  <label for="baseball" class="label_input_wrap"> Baseball:
+    <main>
+      <div class="container">
+          <h1>Submit an Order</h1>
+              <form class="contact-form" id="test_form" name="test_form" method="post" action="form.php" onsubmit="return validateForm(this)">
+                <div class="firstname input-section">
+                  <label for="firstname" class="label_input_wrap"> First Name:
                   </label>
+                  <input type="text" name="req_firstname" id="firstname" placeholder="ex. John">
+                </div>
 
-                  <input type="checkbox" name="sports" value="football" id="football" />
-                  <label for="football" class="label_input_wrap"> Football:
+                <div class="lastname input-section">
+                  <label for="lastname" class="label_input_wrap"> Last Name:
                   </label>
+                  <input type="text" name="req_lastname" id="lastname" placeholder="ex. Smith">
+                </div>
 
-                  <input type="checkbox" name="sports" value="soccer" id="soccer" />
-                  <label for="soccer" class="label_input_wrap"> Soccer:
+                <div class="email input-section">
+                  <label for="email" class="label_input_wrap"> Email:
                   </label>
-              </div>-->
+                  <input type="email" name="email" id="email" placeholder="jsmith@example.com">
+                </div>
 
-              <div class="radiobutton input-section">
-                <h3>Favorite Sport</h3>
-
-                  <input type="radio" name="sports" value="baseball" id="baseball" />
-                  <label for="baseball" class="label_input_wrap"> Baseball:
+                <div class="telephone input-section">
+                  <label for="telephone" class="label_input_wrap"> Telephone:
                   </label>
+                  <input type="tel" name="req_telephone" id="telephone" placeholder="(000) 000-0000">
+                </div>
 
-                  <input type="radio" name="sports" value="football" id="football" />
-                  <label for="football" class="label_input_wrap"> Football:
+                <div class="dropdown input-section">
+                  <label for="box-size" class="label_input_wrap">Bundle Size</label>
+                  <select name="box-size" id="box-size">
+                    <option value="Small">Small (12 Macarons)</option>
+                    <option value="Medium" selected>Medium (24 Macarons</option>
+                    <option value="Large" >Large (36 Macarons</option>
+                  </select>
+                </div>
+
+                <div class="checkbox">
+                  <h3>Flavors (up to 3)</h3>
+                    <div class="checks">
+                      <input type="checkbox" name="flavors" value="vanilla" id="vanilla" />
+                      <label for="vanilla" class="label_input_wrap"> Vanilla:
+                      </label>
+
+                      <input type="checkbox" name="flavors" value="chocolate" id="chocolate" />
+                      <label for="chocolate" class="label_input_wrap"> Chocolate:
+                      </label>
+
+                      <input type="checkbox" name="flavors" value="strawberry" id="strawberry" />
+                      <label for="strawberry" class="label_input_wrap"> Strawberry:
+                      </label>
+
+                      <input type="checkbox" name="flavors" value="matcha" id="matcha" />
+                      <label for="matcha" class="label_input_wrap"> Matcha:
+                      </label>
+
+                      <input type="checkbox" name="flavors" value="blueberry" id="blueberry" />
+                      <label for="blueberry" class="label_input_wrap"> Blueberry:
+                      </label>
+                    </div>
+
+
+                </div>
+
+                <div class="comments input-section">
+                  <label for="comments" class="label_input_wrap"> Special Requests:
                   </label>
+                  <textarea name="comments" id="comments" cols="55" rows="15"
+                  placeholder="Your Text Goes Here"></textarea>
+                </div>
 
-                  <input type="radio" name="sports" value="soccer" id="soccer" />
-                  <label for="soccer" class="label_input_wrap"> Soccer:
-              </div>
+                <div class="submit">
+                  <input type="submit" value="Send!"/>
+                </div>
 
-              <div class="dropdown input-section">
-                <label for="state" class="label_input_wrap">Where do you live?</label>
-                <select name="state" id="state">
-                  <option value="FL">Florida</option>
-                  <option value="GA">Georgia</option>
-                  <option value="OH" selected>Ohio</option>
-                  <option value="MS">Mississippi</option>
-                </select>
-              </div>
+              </form>
 
-              <div class="colorpicker input-section">
-                <label for="colorpicker">Select your favorite color:</label>
-                <input type="color" name="favcolor" id="colorpicker" value="ff0000">
-              </div>
+      </div>
+    </main>
 
-              <div class="datepicker input-section">
-                <label for="birthday">When is your birthday?</label>
-                <input type="date" name="birthday" id="birthday"> />
-              </div>
+<div class="logo">
+    <img src="images/logo.png" alt="logo">
+</div>
 
-              <div class="uploadfile input-section">
-                <label for="uploadfile">Upload a file:</label>
-                <input type="file" name="myfile" id="uploadfile"/>
-              </div>
 
-              <div class="password input-section">
-                <label for="password">Password:</label>
-                <input type="password" name="pwd" id="password"/>
-              </div>
+    <footer>
 
-              <div class="website input-section">
-                <label for="website">Website:</label>
-                <input type="url" name="homepage" id="website"/>
-              </div>
-
-              <div class="reset">
-                <input type="reset" value="Start Over"/>
-              </div>
-
-              <div class="submit">
-                <input type="submit" value="Send!"/>
-              </div>
-
-            </form>
-
-    </div>
+      <p>This page designed by Warner</p>
+    </footer>
   </body>
 </html>
