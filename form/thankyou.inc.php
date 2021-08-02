@@ -6,17 +6,6 @@
   font-family: sans-serif;
 }
 
-.contact-form {
-  background: #ebb3f0;
-  padding: 20px;
-  max-width: 500px;
-  border-radius: 4px;
-  font-family: sans-serif;
-  color: white;
-  margin: 20px auto;
-  text-align: left;
-}
-
 header {
   text-align: center;
   background: #69366e;
@@ -34,49 +23,6 @@ nav a {
   padding: 5px;
 
 }
-
-.label_input_wrap {
-  display: block;
-}
-
-.reset input,
-.submit input {
-  background: #69366e;
-  color: white;
-  padding: 5px 20px;
-  border-radius: 4px;
-}
-
-submit:hover {
-background: orange;
-}
-
-
-.input-section {
-  margin-bottom: 10px;
-}
-
-input {
-  padding: 5px 10px;
-  border-radius: 3px;
-}
-
-textarea {
-  font-family: sans-serif;
-  padding: 9px 10px;
-  border-radius: 3px;
-}
-
-select {
-  width: 185px;
-  padding: 8px 0;
-  border-radius: 3px;
-}
-
-label {
-  font-weight: bold;
-}
-
 .container {
   max-width: 900px;
   margin: 50px auto 180px;
