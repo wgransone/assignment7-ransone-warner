@@ -38,16 +38,37 @@ nav a {
   display: block;
 }
 
-.reset input,
 .submit input {
   background: #69366e;
   color: white;
   padding: 5px 20px;
   border-radius: 4px;
+  transition: .5s;
+}
+
+.submit{
+  background: #69366e;
+  color: white;
+  padding: 5px 20px;
+  border-radius: 4px;
+  transition: .5s;
+  text-align: center;
+}
+
+submit input :hover {
+  color: white;
+  padding: 5px 20px;
+  border-radius: 4px;
+  background: orange;
+  transition: .5s;
 }
 
 submit:hover {
-background: orange;
+  color: white;
+  padding: 5px 20px;
+  border-radius: 4px;
+  background: orange;
+  transition: .5s;
 }
 
 
