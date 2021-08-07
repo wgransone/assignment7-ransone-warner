@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Warner's Macarons Contact Form</title>
+    <link rel="icon"
+          type="image/png"
+          href="images/favicon.png">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;600&display=swap" rel="stylesheet">
+    <style >
+
+    .orderbutton {
+      text-decoration: none;
+      color: #fdc08e;
+      padding: 5px;
+      font-weight: bold;
+      border-bottom: #fdc08e solid 3px;
+      margin: -17px 65px;
+    }
+    </style>
+  </head>
+  <body>
+
+    <header>
+
+      <div class="menulogo">
+          <a href="index.html"> <img class="menulogowhite" src="images/menulogowhite.png" alt="menulogo">
+          </a>
+      </div>
+
+      <div class="navbar">
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="flavors.html">Flavors</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li>
+              <a class="orderbutton" href="contact.html">
+                <img class="orangecart" src="images/orangeshoppingcart.png" alt="orangecarticon">
+              Order</a></li>
+
+
+          </ul>
+        </nav>
+      </div>
+
+    </header>
+
+    <main>
+
+      <div class="mainpic">
+        <img src="images/orderpic.jpg" alt="orderpic">
+
+      </div>
+
+      <div class="container-mid">
+
+            <div class="container-innerleft">
+                <form class="contact-form" id="test_form" name="test_form" method="post" action="form.php" onsubmit="return validateForm(this)">
+                  <div class="firstname input-section">
+                    <label for="firstname" class="label_input_wrap"> First Name:
+                    </label>
+                    <input type="text" name="req_firstname" id="firstname" placeholder="ex. John">
+                  </div>
+
+                  <div class="lastname input-section">
+                    <label for="lastname" class="label_input_wrap"> Last Name:
+                    </label>
+                    <input type="text" name="req_lastname" id="lastname" placeholder="ex. Smith">
+                  </div>
+
+                  <div class="email input-section">
+                    <label for="email" class="label_input_wrap"> Email:
+                    </label>
+                    <input type="email" name="email" id="email" placeholder="jsmith@gmail.com">
+                  </div>
+
+                  <div class="telephone input-section">
+                    <label for="telephone" class="label_input_wrap"> Telephone:
+                    </label>
+                    <input type="tel" name="req_telephone" id="telephone" placeholder="(000) 000-0000">
+                  </div>
+
+                  <div class="dropdown input-section">
+                    <label for="box-size" class="label_input_wrap">Bundle Size</label>
+                    <select name="box-size" id="box-size">
+                      <option value="Small">Small (12 Macarons)</option>
+                      <option value="Medium" selected>Medium (24 Macarons)</option>
+                      <option value="Large" >Large (36 Macarons)</option>
+                    </select>
+                  </div>
+
+                  <div class="checkbox">
+                    <h3>Flavors (up to 3)</h3>
+                      <div class="checks">
+                        <input type="checkbox" name="flavorsvanilla" value="vanilla" id="vanilla" />
+                        <label for="vanilla"> Vanilla
+                        </label>
+
+                        <br>
+
+                        <input type="checkbox" name="flavorschocolate" value="chocolate" id="chocolate" />
+                        <label for="chocolate"> Chocolate
+                        </label>
+
+                        <br>
+
+                        <input type="checkbox" name="flavorsstrawberry" value="strawberry" id="strawberry" />
+                        <label for="strawberry"> Strawberry
+                        </label>
+
+                        <br>
+
+                        <input type="checkbox" name="flavorstangerine" value="tangerine" id="tangerine" />
+                        <label for="tangerine"> Tangerine
+                        </label>
+
+                        <br>
+
+                        <input type="checkbox" name="flavorsblueberry" value="blueberry" id="blueberry" />
+                        <label for="blueberry"> Blueberry
+                        </label>
+
+                        <br>
+
+                        <input type="checkbox" name="flavorslemonade" value="lemonade" id="lemonade" />
+                        <label for="lemonade"> Lemonade
+                        </label>
+
+                        <br>
+
+                        <input type="checkbox" name="flavorsrose" value="rose" id="rose" />
+                        <label for="rose"> Rose
+                        </label>
+
+                        <br>
+
+                        <input type="checkbox" name="flavorscremebrulee" value="cremebrulee" id="cremebrulee" />
+                        <label for="cremebrulee"> Crème Brûlée
+                        </label>
+
+                        <br>
+
+                        <input type="checkbox" name="flavorsgreenapple" value="greenapple" id="greenapple" />
+                        <label for="greenapple"> Green Apple
+                        </label>
+
+                      </div>
+
+
+                  </div>
+
+                  <div class="comments input-section">
+                    <label for="comments" class="label_input_wrap"> Special Requests:
+                    </label>
+                    <textarea name="comments" id="comments" cols="55" rows="15"
+                    placeholder="Let us know any extra details!"></textarea>
+                  </div>
+
+                  <div class="submit">
+                    <input type="submit" value="Send!"/>
+                  </div>
+
+                </form>
+
+                <div class="container-innerright">
+
+                  <h1>Let's Get Started!</h1>
+                  <p> We take pride in delivering quality service. Let us create an exceptional array of one of a kind desserts!<br> <br> Please fill out the adjacent order form complete with your contact information and we'll respond as soon as possible to arrange a date and time for pickup or delivery.</p>
+
+                  <br>
+
+                  <h1>Call Us!</h1>
+                  <p> (407) 683-0924</p>
+
+                  <div class="bottomright">
+
+                    <h1>Visit Us!</h1>
+
+              <!-- Google Map Copied Code -->
+                    <iframe src=
+        "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14015.594887613024!2d-81.3896794!3d28.5728038!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xe9744cbabb6d89c9!2sSouthern%20Home%20Bakery!5e0!3m2!1sen!2sus!4v1628151389183!5m2!1sen!2sus"
+                            width="400";
+                            height="300"; border: 5px #fdc08e;
+                            frameborder="0"
+                            allowfullscreen=""
+                            aria-hidden="false"
+                            tabindex="0">
+                    </iframe>
+                  </div>
+
+                </div>
+
+
+
+            </div>
+
+
+      </div>
+
+
+    </main>
+
+
+    <footer>
+        <div class="footercontainer2">
+                <div class="footerrow">
+
+                <div class="footercolumn">
+                  <a href="index.html"><img src="images/logo.png" alt="logo"> <a>
+                </div>
+
+                <div class="footercolumn">
+                  <div class="footertext">
+                    <h2>Find us elsewhere!</h2>
+                  </div>
+
+                  <a href="https://www.facebook.com"> <img src="images/fbicon.png" alt="fbicon">
+                  <a href="https://www.instagram.com"> <img src="images/igicon.png" alt="igicon">
+                  <a href="https://www.twitter.com"> <img src="images/twicon.png" alt="twicon">
+                  <a href="https://www.pinterest.com"> <img src="images/picon.png" alt="picon">
+                </div>
+                </div>
+        </div>
+
+    </footer>
+  </body>
+</html>

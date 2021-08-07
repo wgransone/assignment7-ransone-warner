@@ -2,75 +2,91 @@
   margin: 0;
   padding: 0;
   border: 0;
-  font-family: sans-serif;
+  font-family: 'Work Sans', sans-serif;
 }
 
 .contact-form {
   background: #ebb3f0;
-  padding: 20px;
-  max-width: 500px;
-  border-radius: 4px;
+  padding: 50px 40px;
   font-family: sans-serif;
-  color: white;
-  margin: 20px auto;
+  margin: 20px 0;
   text-align: left;
 }
 
 header {
-  text-align: center;
   background: #69366e;
-  padding: 20px 0;
+  padding: 35px 0;
 }
 
+.navbar {
+  text-align: left;
+}
 
 nav ul li  {
   display: inline;
+  padding: 10px;
 }
 
 nav a {
   text-decoration: none;
+  font-weight: lighter;
   color: white;
   padding: 5px;
-
+  font-size: larger;
 }
+
+nav a:hover {
+  text-decoration: none;
+  color: #fdc08e;
+  border-bottom: #fdc08e solid 2px;
+}
+
+nav .current {
+  text-decoration: none;
+  color: #fdc08e;
+  padding: 5px;
+  font-weight: bold;
+  border-bottom: #fdc08e solid 3px;
+}
+
 
 .label_input_wrap {
   display: block;
+  margin: 3px 0;
 }
 
 .submit input {
   background: #69366e;
   color: white;
-  padding: 5px 20px;
-  border-radius: 4px;
-  transition: .5s;
+  padding: 7px 50px;
+  border-radius: 10px;
+  font-weight: bold;
 }
 
 .submit{
-  background: #69366e;
   color: white;
   padding: 5px 20px;
-  border-radius: 4px;
-  transition: .5s;
+  border-radius: 10px;
   text-align: center;
+  font-weight: bold;
 }
 
-submit input :hover {
+/*
+.submit input :hover{
+  background: #00000;
   color: white;
   padding: 5px 20px;
-  border-radius: 4px;
-  background: orange;
-  transition: .5s;
+  border-radius: 10px;
+  font-weight: bold;
 }
 
-submit:hover {
+.submit :hover{
   color: white;
   padding: 5px 20px;
-  border-radius: 4px;
-  background: orange;
-  transition: .5s;
-}
-
+  border-radius: 10px;
+  text-align: center;
+  font-weight: bold;
+} */
 
 .input-section {
   margin-bottom: 10px;
@@ -78,57 +94,467 @@ submit:hover {
 
 input {
   padding: 5px 10px;
-  border-radius: 3px;
+  border-radius: 10px;
 }
 
 textarea {
-  font-family: sans-serif;
   padding: 9px 10px;
-  border-radius: 3px;
+  border-radius: 10px;
+  margin: 10px 0px;
+  width: 93%;
+  height: 125px;
 }
 
 select {
   width: 185px;
-  padding: 8px 0;
-  border-radius: 3px;
+  padding: 8px;
+  border-radius: 10px;
 }
 
 label {
   font-weight: bold;
+  color: #69366e;
+  font-size: 25px;
 }
 
-.container {
+.container-mid {
   max-width: 900px;
-  margin: 50px auto 180px;
-  text-align: center;
+  margin: -74px auto 0;
+  display: block;
+}
+
+.container-innerleft {
+  max-width: 900px;
+  margin: 50px auto 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.container-innerright {
+  margin: 20px auto 0;
+  padding: 50px 20px;
 }
 
 body {
   background: #f3e7f3;
+  margin: 0 auto;
 }
 
 footer{
   background: #69366e;
   color: white;
   text-align: center;
-  padding: 20px 0;
+  padding: 100px 0px 20px 0px;
 }
 
 .checks {
-  display: inline;
-  margin: 0 auto;
-  text-align: center;
+  padding: 8px 0;
+  text-align: left;
 }
 
-img {
+.checks label {
+  font-weight: normal;
+  color: black;
+}
+
+.footerlogo img{
+  width: 350px;
+  margin: 0 150px;
+  float: left;
+}
+
+.mainpic {
+  text-align: center;
+  height: 393px;
+}
+
+.menulogo {
+  float: left;
+  margin: -20px 30px;
+}
+
+.menulogowhite {
   max-width: 200px;
-  justify-content: center;
+  position: relative;
+}
+
+p {
+  text-align: left;
+}
+
+h1 {
+  padding: 0 0 20px 0px;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+.mainpictext {
+  text-align: left;
+}
+
+.checkbox{
+  padding: 15px 0;
+  color: #69366e;
+  font-size: 25px;
+}
+
+.orderbutton {
+  float: right;
+  margin: -16px 80px;
+  transition: 0.3s
+}
+
+nav a {
+  transition: 0.3s
+}
+
+nav a .orderbutton :hover{
+  text-decoration: none;
+  color: #fdc08e;
+  padding: 0 25px 0 0;
+  border-bottom: white solid 2px;
+}
+
+.cart {
+  max-width: 20px;
+  padding: 10px 8px 0;
+}
+
+.orangecart {
+  max-width: 20px;
+  padding: 10px 8px 0;
+}
+
+iframe {
+  border: 5px #fdc08e;
+}
+
+.bottomright {
+  padding: 50px 0 0 0;
+}
+
+.leftcolumn, .midcolumn {
+  float: left;
   text-align: center;
 }
 
-.logo {
+
+.rightcolumn {
+  float: right;
+}
+
+
+.ddsection {
+  background-color: #ebb3ef;
+  height: 270px;
   margin: 0 auto;
-  align-items: center;
-  justify-content: center;
+}
+
+.ddsection img {
+  max-width: 200px;
+  padding: 25px 20px 15px 50px;
+}
+
+.ddcontent {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.leftigcolumn, .rightigcolumn {
+  width: 50%;
+  height: 500px;
+  float: left;
+
+}
+
+.rightcolumn {
+  padding: 68px 38px;
+  text-align: end;
+}
+
+.igsection:after {
+  display: table;
+  clear: both;
+}
+
+.igsection {
+  height: 700px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.igsection img {
+  transition: 0.5s
+}
+
+.igsection img:hover {
+  -webkit-filter: brightness(150%);
+
+}
+
+
+.button a:link, a:visited, a:hover, a:active {
+  text-decoration: none;
+}
+
+
+h3 {
+  font-weight: bold;
+  font-size: 30px;
+}
+
+h5 {
+  font-size: 45px
+}
+
+h6 {
+  font-size: 25px;
+  font-weight: lighter;
+}
+
+.left4pics{
+  padding: 25px 0;
+}
+
+.left4pics img {
+  max-width: 150px;
+  border: 7px solid #ebb3ef;
+  border-radius: 10px;
+  margin: 5px
+}
+
+.rightpic img {
+  max-width: 407px;
+  border: 7px solid #ebb3ef;
+  border-radius: 10px;
+  float: left;
+  margin: 25px;
+}
+
+.buttonsupercontainer {
+  width: 900px;
+  float: left;
   text-align: center;
+}
+
+.buttoncontainer {
+  background-color: #fdc08e;
+  border-radius: 500px;
+  float: left;
+  text-align: center;
+}
+
+.buttoncontainer a {
+  padding: 0 50px;
+  text-decoration: none;
+}
+
+.button {
+  padding: 10px 25px;
+  text-align: center;
+}
+
+.button a {
+  font-weight: bold;
+}
+
+.footerright img {
+  padding: 15px
+}
+
+.aboutcolumnleft, .aboutcolumnright{
+  float: left;
+  width: 50%;
+}
+
+.aboutrow {
+  height: 900px;
+  width: 900px;
+  margin: 0 auto;
+}
+
+.aboutrow:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.aboutcolumnleft img{
+  float: left;
+  max-height: 2750px;
+  padding: 50px
+}
+
+.aboutcolumnleft {
+  text-align: center;
+}
+
+.abouttextcontainer {
+  padding-top: 50px
+}
+
+p {
+  font-size: 23px
+}
+
+span.lb-caption {
+    font-size: 30px !important;
+}
+
+span.lb-number {
+    font-size: 20px !important;
+
+}
+
+/* *****************I couldn't get this to work at all**********************
+
+.bundlecontainer{
+  background-color: #ebb3ef;
+  height: 400px
+}
+
+.bundlecontainer2{
+  width: 900px;
+  text-align: center;
+  margin: 0 auto;
+  padding: 50px
+}
+
+.bundlecontainer2 img {
+  padding: 25px 25px;
+  text-align: center;
+}
+
+.bundlecontainer2 .smallbundlecontainer, .medbundlecontainer, .largebundlecontainer {
+  width: 300px;
+  float: left;
+}
+
+.bundlecolumn {
+  float: left;
+  width: 33.33%;
+  text-align: center
+}
+
+.bundlecolumn img {
+  display: block;
+  margin: 0 auto;
+}
+
+.columntext {
+  padding: 100px 0 0;
+}
+
+.bundlecolumn p {
+  text-align: center;
+}
+
+.bundlerow {
+    width: 900px;
+    text-align: center;
+    margin: 0 auto
+}
+
+.bundlerow:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.smallbunpic {
+  max-width: 100px;
+  text-align: center;
+  float: left;
+}
+
+.medbunpic {
+  max-width: 115px;
+  text-align: center;
+  float: left;
+}
+
+.largebunpic{
+  max-width: 170px;
+  text-align: center;
+  float: left;
+}
+
+
+*****************I couldn't get this to work at all***********************/
+
+.flavorscontainer {
+  height: 900px;
+  text-align: center;
+  padding-top: 50px
+}
+
+.flavorscontainer h2{
+  padding-bottom: 50px
+}
+
+
+
+.game-board {
+    width: 900px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.box {
+  width: 33%;
+  float: left;
+}
+
+.box img {
+  max-width: 200px
+}
+
+.box p {
+  font-size: 30px;
+  text-align: center;
+}
+
+footer {
+  position: relative;
+  margin-top: -180px;
+}
+
+.footercolumn {
+  float: left;
+  width: 50%;
+}
+
+.footerrow:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+footer {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.footercontainer2{
+  width: 900px;
+  margin: 0 auto;
+}
+
+.bundletext {
+  height: 100px
+}
+
+.bundletext2 {
+  width: 33%;
+  float: left;
+  text-align: center;
+  vertical-align: bottom;
+  height: 100px
+}
+
+.buttoncontainer a {
+  font-size: 20px;
+  padding: 0 366px;
 }
